@@ -1,15 +1,22 @@
+//import express module
+var express = require('express');
+var todoController = require('./controllers/todoController');
 
-const express = require('express');
 
-const app = express();
+//fire up express - invoke function
+var app = express();
 
-//setup template engine
+//set up template engine
 app.set('view engine', 'ejs');
 
-//middleware to serve static files
-app.use(express.static('./public'));
+//serve up static files using express static
+app.use(express.static('./public')); //used on every route put as url
+
+//fire controllers
+todoController(app);
 
 //listen to port
 app.listen(3000, function (){
-    console.log('Listening on 3000');
-})
+    console.log('Listening on port 3000');
+});
+

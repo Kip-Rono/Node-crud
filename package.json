@@ -1,29 +1,24 @@
 {
-  "dependencies": {
-    "body-parser": "^1.20.0",
-    "ejs": "^3.1.8",
-    "express": "^4.18.1"
-  },
   "name": "crud",
   "version": "1.0.0",
-  "description": "Node crud application with MVC architecture using express, node and mongodb",
+  "description": "Node crud ",
   "main": "index.js",
   "scripts": {
-    "test": "npm test app",
-    "start": "node server.js"
+    "test": "npm test run"
   },
-  "author": "Kiptoo",
-  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Kip-Rono/List.git"
   },
-  "keywords": [
-    "Node",
-    "crud"
-  ],
+  "author": "Kiptoo",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/Kip-Rono/List/issues"
   },
-  "homepage": "https://github.com/Kip-Rono/List#readme"
+  "homepage": "https://github.com/Kip-Rono/List#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  }
 }
