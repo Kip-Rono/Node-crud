@@ -9,8 +9,21 @@
   "description": "Node crud application with MVC architecture using express, node and mongodb",
   "main": "index.js",
   "scripts": {
-    "test": "npm test app"
+    "test": "npm test app",
+    "start": "node server.js"
   },
   "author": "Kiptoo",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kip-Rono/List.git"
+  },
+  "keywords": [
+    "Node",
+    "crud"
+  ],
+  "bugs": {
+    "url": "https://github.com/Kip-Rono/List/issues"
+  },
+  "homepage": "https://github.com/Kip-Rono/List#readme"
 }
