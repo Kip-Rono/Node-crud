@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  },
+  "name": "crud",
+  "version": "1.0.0",
+  "description": "Node crud application with MVC architecture using express, node and mongodb",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test app"
+  },
+  "author": "Kiptoo",
+  "license": "ISC"
+}
