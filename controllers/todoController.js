@@ -2,9 +2,13 @@
  * Controllers handle routes
  * render views, and manipulate data to views
  **/
+//mongoose package to connect and interact with db
+const mongoose = require('mongoose');
+
 const bodyParser = require('body-parser');
+
 //data - fetch from datastore
-const data = [
+let data = [
     {car: 'BMW X1'},{car: 'Audi R8'}, {car: 'Mercedes Benz C180'},
 ];
 const urlEncodedParser = bodyParser.urlencoded({extended: false});
@@ -31,7 +35,11 @@ module.exports = function (app) {
     });
 
     //handle delete request
-    app.delete('/to-do', function (req, res) {
-
+    app.delete('/delete/car/:car', function (req, res) {
+        data = data.filter(function (car){
+            //if false filters from array
+            return car.car.replace(/ /g, '-') !== req.params.car;
+        });
+        res.json(data);
     });
 }
