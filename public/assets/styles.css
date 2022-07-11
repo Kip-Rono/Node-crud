@@ -4,16 +4,15 @@ body{
     color: #989898;
 }
 
-#todo-table{
+#cars_table{
     position: relative;
-    width: 95%;
     background: #090d13;
     margin: 0 auto;
-    padding: 20px;
+    padding: 5px;
     box-sizing: border-box;
 }
 
-#todo-table form:after{
+#cars_table form:after{
     margin: 0;
     content: '';
     display: block;
@@ -49,7 +48,7 @@ ul{
 
 li{
     width: 100%;
-    padding: 20px;
+    padding: 5px;
     box-sizing: border-box;
     font-family: arial;
     font-size: 20px;
